@@ -1,0 +1,13 @@
+- name: Deploy QuickSite
+  hosts: localhost
+  tasks:
+    - name: Pull latest code
+      git:
+        repo: 'https://github.com/yash-sewak07/FIS_DevOps_Training_YS.git'
+        dest: '/var/www/quicksite'
+    - name: Install dependencies
+      shell: npm install
+      args:
+        chdir: /var/www/quicksite
+    - name: Restart application
+      shell: pkill node; nohup node /var/www/quicksite/app.js &
