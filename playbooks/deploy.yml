@@ -3,11 +3,11 @@
   tasks:
     - name: Pull latest code
       git:
-        repo: 'https://github.com/your-repo/quicksite.git'
-        dest: '/var/www/quicksite'
+        repo: 'https://github.com/yash-sewak07/FIS_DevOps_Training_YS.git'
+        dest: '/root/FIS_DevOps_Training_YS/playbooks'
     - name: Install dependencies
       shell: npm install
       args:
-        chdir: /var/www/quicksite
+        chdir: /root
     - name: Restart application
-      shell: pkill node; nohup node /var/www/quicksite/app.js &
+      shell: pkill node; nohup node /root/app.js &
