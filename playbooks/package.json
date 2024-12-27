@@ -1,0 +1,12 @@
+{
+  "name": "FISDevOps-Trainingbuild1",
+  "version": "1.0.0",
+  "description": "FISDevOps-Trainingbuild1 - Training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
