@@ -1,0 +1,28 @@
+{
+  "name": "fis-devops-training",
+  "version": "1.0.0",
+  "description": "A project for FIS DevOps Training",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yash-sewak07/FIS_DevOps_Training_YS.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "devops",
+    "training"
+  ],
+  "author": "Yash Sewak",
+  "license": "ISC"
+}
