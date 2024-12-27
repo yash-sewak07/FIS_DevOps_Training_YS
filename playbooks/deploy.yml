@@ -4,10 +4,10 @@
     - name: Pull latest code
       git:
         repo: 'https://github.com/yash-sewak07/FIS_DevOps_Training_YS.git'
-        dest: '/root/FIS_DevOps_Training_YS/playbooks'
+        dest: '/var/jenkins_home/workspace/FISDevOps-Trainingbuild1/FIS_DevOps_Training_YS'
     - name: Install dependencies
       shell: npm install
       args:
-        chdir: /root
+        chdir: /var/jenkins_home/workspace/FISDevOps-Trainingbuild1/FIS_DevOps_Training_YS
     - name: Restart application
-      shell: pkill node; nohup node /root/app.js &
+      shell: pkill node; nohup node /var/jenkins_home/workspace/FISDevOps-Trainingbuild1/FIS_DevOps_Training_YS/app.js &
